@@ -47,7 +47,9 @@ class DataValidation:
                 d2 = current_df[column]
                 is_same_dist = ks_2samp(d1, d2)
                 is_found = False
-                if is_same_dist.pvalue > threshold:
+                if threshold <= is_same_dist.pvalue:
+                    is_found = False
+                else:
                     status = False
                     is_found = True
                     logging.warning(f"Column: {column} has drift")
