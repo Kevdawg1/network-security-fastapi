@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kevinkam/Documents/Projects/MLOps%20Bootcamp/network-security/mlruns/0/5769dda0786547d48789d53defbaaf98/artifacts
+end_time: 1739445596312
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5769dda0786547d48789d53defbaaf98
+run_name: aged-shrew-612
+run_uuid: 5769dda0786547d48789d53defbaaf98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739445596309
+status: 3
+tags: []
+user_id: kevinkam

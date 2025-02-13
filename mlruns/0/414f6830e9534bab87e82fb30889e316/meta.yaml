@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/kevinkam/Documents/Projects/MLOps%20Bootcamp/network-security/mlruns/0/414f6830e9534bab87e82fb30889e316/artifacts
+end_time: 1739445597785
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 414f6830e9534bab87e82fb30889e316
+run_name: inquisitive-fish-615
+run_uuid: 414f6830e9534bab87e82fb30889e316
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739445597782
+status: 3
+tags: []
+user_id: kevinkam
