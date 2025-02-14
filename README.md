@@ -1,6 +1,6 @@
 ### Network Security Projects For Phising Data
 
-Setup github secrets:
+#### Setup github secrets:
 AWS_ACCESS_KEY_ID=
 
 AWS_SECRET_ACCESS_KEY=
@@ -11,19 +11,26 @@ AWS_ECR_LOGIN_URI = 788614365622.dkr.ecr.us-east-1.amazonaws.com/networkssecurit
 ECR_REPOSITORY_NAME = networkssecurity
 
 
-Docker Setup In EC2 commands to be Executed
+#### Docker Setup In EC2 commands to be Executed
 #optinal
 
-sudo apt-get update -y
+`sudo apt-get update -y`
 
-sudo apt-get upgrade
+`sudo apt-get upgrade`
 
 #required
 
-curl -fsSL https://get.docker.com -o get-docker.sh
+`curl -fsSL https://get.docker.com -o get-docker.sh`
 
-sudo sh get-docker.sh
+`sudo sh get-docker.sh`
 
-sudo usermod -aG docker ubuntu
+`sudo usermod -aG docker ubuntu`
 
-newgrp docker
+`newgrp docker`
+
+#### Github Self-Hosted Runner 
+You will need to create and configure a self-hosted runner in your instance (EC2) when the Docker image is available in the cloud (Amazon ECR)
+
+Go into Github Project Settings > Actions > Runners > Add new self-hosted runner > Choose Linux
+
+Follow the instructions and copy and paste the commands into your instance
