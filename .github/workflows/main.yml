@@ -1,3 +1,8 @@
+## Prerequisites for AWS ECR Deployment
+## 1. Create a repository on AWS ECR
+## 2. Save the credentials for the repository as a secret in GitHub
+## 3. Create a GitHub secret called AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+
 name: workflow
 
 on: 
@@ -21,3 +26,23 @@ jobs:
               run: echo "Linting repository"
             - name: Run unit tests
               run: echo "Running unit tests"
+    build-and-push-ecr-image:
+        name: Continuous Deployment
+        needs: integration
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+            - name: Install Utilities
+              run: | 
+                sudo apt-get update
+                sudo apt-get install -y jq unzip
+            - name: Configure AWS credentials
+              uses: aws-actions/configure-aws-credentials@v1
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: ${{ secrets.AWS_REGION }}
+            - name: Login to Amazon ECR
+              id: login-ecr
+              uses: aws-actions/amazon-ecr-login@v1
