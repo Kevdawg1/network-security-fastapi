@@ -67,7 +67,7 @@ class DataTransformation:
             save_numpy_array_data(file_path=self.data_transformation_artifact.transformed_train_file_path, array=train_arr)
             save_numpy_array_data(file_path=self.data_transformation_artifact.transformed_test_file_path, array=test_arr)
             save_object(file_path=self.data_transformation_artifact.transformed_object_file_path, obj=preprocessor_obj)
-            save_object('final_models/preprocess.pkl', preprocessor_obj)
+            save_object('final_models/preprocessor.pkl', preprocessor_obj)
             
             logging.info("Preparing Data Transformation artifact")
             data_transformation_artifact = DataTransformationArtifact(
