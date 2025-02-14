@@ -1,3 +1,7 @@
+"""
+Run this app with `uvicorn app:app --reload`
+"""
+
 import os, sys
 
 import certifi
