@@ -9,9 +9,11 @@
 <br />
 <div align="center">
   <a href="https://github.com/Kevdawg1/slack-chatbot-deepseek">
-    <img src="https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png" alt="Logo" width="80" height="80">
-    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/deepseek-logo-icon.png" alt="Logo" width="80" height="80">
-    <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/ollama.png" alt="Logo" width="80" height="80">
+    <img src="https://miro.medium.com/v2/resize:fit:908/1*w4N8NNxnCo-qhADUe5BsGQ.png" alt="Logo" width="80" height="80">
+    <img src="https://6104926.fs1.hubspotusercontent-na1.net/hubfs/6104926/Imported_Blog_Media/Amazon%20ec2.png" alt="Logo" width="80" height="80">
+    <img src="https://upload.wikimedia.org/wikiversity/en/8/8c/FastAPI_logo.png" alt="Logo" width="80" height="80">
+    <img src="https://dagshub.com/avatars/1440" alt="Logo" width="80" height="80">
+    <img src="https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Network Security Projects For Phishing Data</h3>
