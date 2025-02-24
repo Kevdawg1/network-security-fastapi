@@ -1,18 +1,19 @@
 ### Network Security Projects For Phising Data
 
 #### Setup github secrets:
+```
 AWS_ACCESS_KEY_ID=
 
 AWS_SECRET_ACCESS_KEY=
 
-AWS_REGION = us-east-1
+AWS_REGION = ap-southeast-2
 
 AWS_ECR_LOGIN_URI = 788614365622.dkr.ecr.us-east-1.amazonaws.com/networkssecurity
 ECR_REPOSITORY_NAME = networkssecurity
-
+```
 
 #### Docker Setup In EC2 commands to be Executed
-#optinal
+#optional
 
 `sudo apt-get update -y`
 
